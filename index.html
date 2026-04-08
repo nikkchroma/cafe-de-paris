@@ -1,74 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Entrance Cafe</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe de Paris | Alwarpet, Chennai</title>
+  <meta
+    name="description"
+    content="Cafe de Paris — an elegant glasshouse-style cafe experience in Alwarpet, Chennai."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="page-bg"></div>
 
-<!-- NAV -->
-<nav class="nav">
-  <div class="logo">ENTRANCE</div>
-  <div class="menu">
-    <a href="#about">About</a>
-    <a href="#menu">Menu</a>
-    <a href="#visit">Visit</a>
-  </div>
-</nav>
+  <header class="header" id="home">
+    <nav class="nav container">
+      <a href="#home" class="brand">
+        <span class="brand-top">CAFÉ DE</span>
+        <span class="brand-bottom">PARIS</span>
+      </a>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Experience Aesthetic Dining</h1>
-    <p>Where coffee meets calm luxury</p>
-    <a href="#visit" class="btn">Visit Us</a>
-  </div>
-</section>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Us</h2>
-  <p>
-    The Entrance Cafe offers a warm, aesthetic environment with premium dining,
-    curated desserts, and handcrafted beverages. Designed for comfort and elegance.
-  </p>
-</section>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#specials">Specials</a>
+        <a href="#gallery">Ambience</a>
+        <a href="#visit">Visit</a>
+        <a href="#reserve" class="nav-cta">Reserve</a>
+      </div>
+    </nav>
 
-<!-- MENU -->
-<section id="menu" class="section dark">
-  <h2>Signature Picks</h2>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">French-inspired café experience</p>
+        <h1>
+          A romantic glasshouse café
+          <span>crafted for slow moments</span>
+        </h1>
+        <p class="hero-text">
+          Elegant interiors, warm bakery notes, signature continental plates,
+          and a timeless atmosphere in the heart of Chennai.
+        </p>
 
-  <div class="cards">
-    <div class="card">Truffle Fries</div>
-    <div class="card">Tiramisu</div>
-    <div class="card">Creamy Pasta</div>
-    <div class="card">Iced Latte</div>
-  </div>
-</section>
+        <div class="hero-actions">
+          <a href="#reserve" class="btn btn-solid">Book a Table</a>
+          <a href="#about" class="btn btn-outline">Explore the Space</a>
+        </div>
+      </div>
 
-<!-- VISIT -->
-<section id="visit" class="section">
-  <h2>Visit Us</h2>
-  <p>Kilpauk, Chennai</p>
-  <p>Open Daily: 8:30 AM – 10:30 PM</p>
+      <div class="hero-card reveal delay-1">
+        <div class="hero-image">
+          <div class="hero-badge">Alwarpet • Chennai</div>
+        </div>
+        <div class="hero-info">
+          <div>
+            <p class="mini-label">Known for</p>
+            <h3>Glass house ambience</h3>
+          </div>
+          <div>
+            <p class="mini-label">Mood</p>
+            <h3>Elegant • Intimate • Premium</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 
-  <form class="form">
-    <input type="text" placeholder="Your Name">
-    <input type="text" placeholder="Phone Number">
-    <button>Reserve Table</button>
-  </form>
-</section>
+  <main>
+    <section class="about section container" id="about">
+      <div class="section-heading reveal">
+        <p class="section-tag">About the café</p>
+        <h2>Designed for conversations, coffee, and long evenings</h2>
+      </div>
 
-<footer>
-  <p>© 2026 The Entrance Cafe</p>
-</footer>
+      <div class="about-grid">
+        <div class="about-text card reveal">
+          <p>
+            Cafe de Paris is imagined here as a premium digital experience that
+            reflects its real-world charm — a calm, romantic setting with
+            beautiful interiors, outdoor seating, and a refined European café
+            feel.
+          </p>
+          <p>
+            This concept website is built to help the brand look more premium
+            online, showcase signature dishes, and turn casual visitors into
+            reservations and footfall.
+          </p>
+        </div>
 
-<script src="script.js"></script>
+        <div class="about-points reveal delay-1">
+          <div class="point card">
+            <span>01</span>
+            <h3>Premium first impression</h3>
+            <p>Luxury visuals and editorial-style layout for stronger branding.</p>
+          </div>
+          <div class="point card">
+            <span>02</span>
+            <h3>Menu discovery</h3>
+            <p>Highlights signature dishes and desserts in a clean format.</p>
+          </div>
+          <div class="point card">
+            <span>03</span>
+            <h3>Reservation focused</h3>
+            <p>Clear calls-to-action for bookings, location, and customer flow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specials section" id="specials">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-tag">Signature highlights</p>
+          <h2>A menu experience made to look as good as it tastes</h2>
+        </div>
+
+        <div class="special-grid">
+          <article class="special-card reveal">
+            <div class="special-image img-one"></div>
+            <div class="special-copy">
+              <p class="dish-type">Starters</p>
+              <h3>Mezze Platter</h3>
+              <p>
+                A sharing-friendly favorite presented with a refined café dining vibe.
+              </p>
+            </div>
+          </article>
+
+          <article class="special-card reveal delay-1">
+            <div class="special-image img-two"></div>
+            <div class="special-copy">
+              <p class="dish-type">Comfort plate</p>
+              <h3>Pink Pasta</h3>
+              <p>
+                Rich, creamy, and perfect for a premium continental menu showcase.
+              </p>
+            </div>
+          </article>
+
+          <article class="special-card reveal delay-2">
+            <div class="special-image img-three"></div>
+            <div class="special-copy">
+              <p class="dish-type">Café classic</p>
+              <h3>Broccoli Cheddar Soup</h3>
+              <p>
+                Warm, elegant, and ideal for visual storytelling on the site.
+              </p>
+            </div>
+          </article>
+
+          <article class="special-card reveal delay-3">
+            <div class="special-image img-four"></div>
+            <div class="special-copy">
+              <p class="dish-type">Bakery & sides</p>
+              <h3>Mexican Cheese Balls</h3>
+              <p>
+                A crisp, indulgent highlight that adds energy to the menu section.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section container" id="gallery">
+      <div class="section-heading reveal">
+        <p class="section-tag">Ambience</p>
+        <h2>Built around warmth, glass, greenery, and intimate seating</h2>
+      </div>
+
+      <div class="gallery-layout">
+        <div class="gallery-main reveal"></div>
+        <div class="gallery-side">
+          <div class="gallery-box reveal delay-1"></div>
+          <div class="gallery-box reveal delay-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section container" id="visit">
+      <div class="visit-grid">
+        <div class="visit-copy reveal">
+          <p class="section-tag">Visit us</p>
+          <h2>Make your next coffee date feel a little more Parisian</h2>
+          <div class="visit-list">
+            <div class="visit-item">
+              <h3>Location</h3>
+              <p>24, Cenotaph Road, Alwarpet / Teynampet, Chennai</p>
+            </div>
+            <div class="visit-item">
+              <h3>Hours</h3>
+              <p>Daily • 12:00 PM to 11:00 PM</p>
+            </div>
+            <div class="visit-item">
+              <h3>Experience</h3>
+              <p>Romantic seating, outdoor dining, desserts, and continental plates</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reserve-card reveal delay-1" id="reserve">
+          <p class="reserve-tag">Reserve a table</p>
+          <h3>Elegant dining starts here</h3>
+
+          <form class="reserve-form">
+            <input type="text" placeholder="Your name" />
+            <input type="tel" placeholder="Phone number" />
+            <input type="date" />
+            <input type="time" />
+            <button type="submit" class="btn btn-solid full">Request Reservation</button>
+          </form>
+
+          <p class="form-note">
+            Replace this with WhatsApp, call, or real table booking integration.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <p class="footer-brand">CAFÉ DE PARIS</p>
+        <p class="footer-text">A concept website crafted for pitch and presentation.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#gallery">Ambience</a>
+        <a href="#visit">Visit</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
